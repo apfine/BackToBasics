@@ -2,7 +2,8 @@
 #include <cmath>
 
 using namespace std;
-
+/*I made it in the form of a class so that you can add other functions like
+checking odd even or divisibility for a num.*/
 class solution{
     public:
         int reverseX(int num){
