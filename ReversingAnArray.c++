@@ -27,7 +27,8 @@ int ArrayReverse(int arre[], int size){
 
 int main(){
  int array[5] = {89,56,78,56,23};
- int size = (sizeof(array)/4);
+ int size = (sizeof(array)/4); /*MAJOR MISUNDERSTANDING : If you start putting the size as sizeof() you get garbage values in the firts 15 places because sizeof () returns
+ the byte size of the array and not the number of members in the array Hence divided by 4.*/
  ArrayReverse (array , size);
  return 0 ;
 }
