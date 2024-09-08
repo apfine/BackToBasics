@@ -1,3 +1,5 @@
+/*The code is simply testing the number for being a prime number.*/
+
 #include <iostream>
 #include <cmath>
 
