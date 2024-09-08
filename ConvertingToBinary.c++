@@ -15,7 +15,7 @@ int converter(int num){
         ans = ans + mul*bit;
         mul*=10;
     }
-    // cout<<ans<<endl;
+    // cout<<ans<<endl;   //I wrote these statements to test some bugs.
     return ans;
 }
 
