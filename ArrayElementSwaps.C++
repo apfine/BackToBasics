@@ -22,7 +22,8 @@ void ArrayExchange(int array[] , int initial , int next , int size){
       array[next]    = CopiedArray[initial];  
       
       /*These two lines could have been in one line in case of python 
-      and we would have not been required to copy the array , Elements would have been exchanged automatically in one statement ,
+      and we would have not been required to copy the array , Elements would have been exchanged 
+      automatically in one statement ,
       but here if we do so no change is seen in the array. 
       
       -->IN python arrays are implemented through lists. */
