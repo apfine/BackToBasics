@@ -21,10 +21,13 @@ void ArrayExchange(int array[] , int initial , int next , int size){
       array[initial] = CopiedArray[next];
       array[next]    = CopiedArray[initial];  
       
-      /*These two lines could have been in one line in case of python 
+      /* These two lines could have been in one line in case of python 
       and we would have not been required to copy the array , Elements would have been exchanged 
       automatically in one statement ,
       but here if we do so no change is seen in the array. 
+
+      -->You can also use swap(array[i],array[j]) instead of all this . But all I wanted to show what 
+         the mechanism is behind it. Or in other words wanted to develop your intution. 
       
       -->IN python arrays are implemented through lists. */
       
