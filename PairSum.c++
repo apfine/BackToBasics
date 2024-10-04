@@ -1,4 +1,4 @@
-//A number is given also an array . Find out pairs from the array whose sum can be equal to the number ?
+//Question : A number is given also an array . Find out pairs from the array whose sum can be equal to the number ?
 
 //Solving this question using brute force method with O(n^2)
 
