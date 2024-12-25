@@ -17,6 +17,7 @@ int main(){
     list.delet(4);
     list.addMultiple(5);
     list.show();
-
+    int n = list.at(6);
+    cout<<"\n"<<n;
 }
 
