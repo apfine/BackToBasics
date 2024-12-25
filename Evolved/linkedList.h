@@ -49,7 +49,7 @@ class linked{
 
 
         /**
-         @brief The value you provided will be added as the HEAD.
+         @brief This method adds the provided value as head of the list.
          @param val The value to be added as a head.
          */
          void addhead(int val){
@@ -61,10 +61,10 @@ class linked{
 
 
         /**
-         @brief This is added as tail to the list.
+         @brief This methods adds the value as the tail of the list.
          @param value This value to be added as a tail.
          */
-        void addLast(int value){      //This function helps adding a member at the last of the list.
+        void addLast(int value){      //This method helps adding a member at the last of the list.
             Node* newNode = new Node(value);
             if (head == nullptr) {
                 head = newNode;
@@ -78,11 +78,11 @@ class linked{
         }
 
         /**
-         @brief This function is used to add a value in the mid .
+         @brief This methdod is used to add a value in the mid .
          @param count This is the position of the insetion.
          @param num This is the value to be inserted.
           */        
-        void addMid(int count , int num){       //This fucntion helps inserting a number at a specefic position in the list
+        void addMid(int count , int num){       //This method helps inserting a number at a specefic position in the list
             Node* current = head;
             while(count-->2){
                 current = current->next;
@@ -99,7 +99,7 @@ class linked{
 
         //This shows the complete list of objects
         /**
-        @brief This function shows the list from starting to end.
+        @brief This method shows the list from starting to end.
          */
         void show(){
             Node* current = head;
@@ -113,14 +113,14 @@ class linked{
         }
 
         /**
-         @brief This function returns the head if called.
+         @brief This method returns the head if called.
          */
         Node* getHead(){
             return head;
         }
 
         /**
-         @brief This function returns the tail if called.
+         @brief This method returns the tail if called.
          */
         Node* getTail(){
             return tail;
@@ -129,7 +129,7 @@ class linked{
 
 
         /**
-         @brief This function gives deletes a number from specefic position
+         @brief This method gives deletes a number from specefic position
          @param position This parameter is used to delete an object from position.
          */
         void delet(int position){
@@ -149,17 +149,31 @@ class linked{
 
 
         /**
-         @brief You can add multiple values to the list
+         @brief You can add multiple values to the list with this method
          @param count This is the count of number of elements to be added.
          */
         void addMultiple(int count){
-            //This function adds multiple values to the list;
+            //This method adds multiple values to the list;
             std::cout<<"\nPlease enter the numbers one by one : ";
             while(count-->0){
                 int n;
                 std::cin>>n;
                 addLast(n);
             }
+        }
+
+        /**
+         @brief This method is used to reach at a number at a specefic place in the list
+         @param at This is the position of where you want to reach in the list (Don't confuse this with array zero indexing.)
+         */
+        int at(int at){
+            Node* n = new Node(NULL);         //This function/method opens up the way for you to sort the linked-list.
+            n = head;
+            while(at-->1){
+                n = n->next;
+            }
+            return n->key;
+
         }
 
 
