@@ -450,8 +450,6 @@ class queue{
 
 class tree{
     private:
-        nnode* root;
-
         void count(int &countl , int &countr , nnode*& current , stack*& s){
             nnode* b = current;
             int c =0  ;
@@ -475,6 +473,7 @@ class tree{
 
 
     public:
+        nnode* root;
         tree():root(){/*This is the constructor.*/}
 
 
